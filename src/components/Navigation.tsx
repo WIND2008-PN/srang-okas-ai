@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { Home, MessageCircle, TrendingUp, MapPin, Users, Sparkles } from "lucide-react";
+import { Home, MessageCircle, TrendingUp, MapPin, Users, Sparkles, User } from "lucide-react";
 
 const Navigation = () => {
   const location = useLocation();
@@ -8,6 +8,7 @@ const Navigation = () => {
     { path: "/", icon: Home, label: "Home", labelTh: "หน้าหลัก" },
     { path: "/chat", icon: MessageCircle, label: "Aka Zone", labelTh: "Aka" },
     { path: "/growth", icon: TrendingUp, label: "Growth", labelTh: "เติบโต" },
+    { path: "/status", icon: User, label: "Status", labelTh: "สถานะ" },
     { path: "/map", icon: MapPin, label: "Jobs", labelTh: "งาน" },
     { path: "/community", icon: Users, label: "Community", labelTh: "ชุมชน" },
   ];
